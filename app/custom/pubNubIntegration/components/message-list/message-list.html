@@ -1,0 +1,25 @@
+<ul class="message-list collection" style="">
+  <li class="collection-item message-item avatar user-message-container" ng-repeat="message in messages track by message.uuid">
+    <message-Item id="{{message.uuid}}"  content="message.content" sender-uuid="{{message.sender_uuid}}" date="{{message.date}}"></message-Item>
+      <div  ng-hide="pageType=='user'" class="panel-footer clearfix">
+          <div class="pull-right">
+              <button  class="btn btn-light-green" ng-click="provideEdtTxtToggleBar=!provideEdtTxtToggleBar">PROVIDE ANSWER</button>
+          </div>
+      </div>
+
+      <div ng-if="provideEdtTxtToggleBar">
+          <div ng-if="channelGroup == true"
+               ng-class="" class="panel panel-primary">
+              <div class="panel-body">
+               <textarea ng-model="userMessage" rows="4" cols="50">
+               </textarea>
+              </div>
+              <div class="panel-footer clearfix">
+                  <div class="pull-right">
+                      <a ng-click="provideAnswer(userMessage,message)" class="btn btn-default">SEND</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </li>
+</ul> 

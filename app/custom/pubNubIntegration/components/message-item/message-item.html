@@ -1,0 +1,14 @@
+<div id="wrapper">
+    <div id="inner1">
+        <user-avatar content="content" uuid="{{senderUuid}}"></user-avatar>
+    </div>
+    <div id="inner2">
+        <button type="button" ng-click="addTab()" class="btn btn-primary">Chat</button>
+    </div>
+</div>
+<span class="title"><b>{{content.senderName }}</b></span>
+<p style="display: inline-block;padding-left: 20px;float:right"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ date | date:"MM/dd/yyyy 'at' h:mma"}}</p>
+<p class="user-message">{{ content.messageContent }}</p>
+<img ng-if="content.hasOwnProperty('file')" src="{{imagePath}}" height="100" alt="Image preview...">
+
+

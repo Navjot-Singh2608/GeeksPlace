@@ -1,0 +1,164 @@
+.avatar-img{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+.editTextTranition{
+    width: 100px;
+    height: 100px;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+}
+.provideAnswerToggleBar{
+    visibility: hidden;
+}
+.group-img{
+    max-width:100% !important;
+    height:150px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #01579b;
+    color: white;
+    text-align: center;
+}
+#wrapper{
+    margin-left:auto;
+    margin-right:auto;
+    height:auto;
+    width:auto;
+}
+#inner1{
+
+    float:left;
+}
+#inner2{
+    position: absolute;
+    margin-top: 40px;
+    left: 0;
+    clear: left;
+}
+.user-message-container{
+    float: left;
+    min-height: 100px!important;
+    width: 100%;
+}
+.user-message{
+    word-wrap: break-word;
+    margin-top: 25px!important;
+    margin-left: 80px!important;
+    background-color: #f6f6f6;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/*
+ @import "compass/css3";
+ @import "compass";
+ */
+.tab-container {
+    background: #8dc8fb;
+    margin: 0;
+    padding: 0;
+    max-height: 40px;
+}
+.tab-container ul.nav-tabs {
+    margin: 0;
+    list-style-type: none;
+    line-height: 40px;
+    max-height: 40px;
+    overflow: hidden;
+    display: inline-block;
+    padding-right: 20px;
+    border-bottom: 5px solid #f7f7f7;
+}
+.tab-container ul.nav-tabs > li {
+    margin: 5px -14px 0;
+    padding: 0 30px 0 25px;
+    height: 170px;
+    background: #c3d5e6;
+    position: relative;
+    width: 200px;
+    max-width: 200px;
+    min-width: 20px;
+    border: 1px solid #aaa;
+}
+.tab-container ul.nav-tabs > li:first-child {
+    margin-left: 0;
+}
+.tab-container ul.nav-tabs > li:last-of-type {
+    margin-right: 0;
+}
+.tab-container ul.nav-tabs > li > a {
+    display: block;
+    max-width: 100%;
+    text-decoration: none;
+    color: #222;
+    padding: 3px 7px;
+}
+.tab-container ul.nav-tabs > li > a span {
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+}
+.tab-container ul.nav-tabs > li > a:focus, .tab-container ul.nav-tabs > li > a:hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+.tab-container ul.nav-tabs > li > a .glyphicon-remove {
+    color: #777;
+    display: inline-block;
+    padding: 3px;
+    font-size: 10px;
+    position: absolute;
+    z-index: 10;
+    top: 7px;
+    right: -10px;
+}
+.tab-container ul.nav-tabs > li > a .glyphicon-remove:hover {
+    background: #d39ea3;
+    color: white;
+}
+.tab-container ul.nav-tabs > li.active {
+    z-index: 2;
+}
+.tab-container ul.nav-tabs > li.active > a {
+    background-color: transparent;
+    border-color: transparent;
+}
+.tab-container ul.nav-tabs > li.active > a:focus, .tab-container ul.nav-tabs > li.active > a:hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+.tab-container ul.nav-tabs .btn {
+    float: left;
+    height: 20px;
+    width: 35px;
+    min-width: 35px;
+    max-width: 35px;
+    margin: 10px 0 0 0;
+    border-color: #71a0c9;
+    outline: none;
+}
+.tab-container ul.nav-tabs .btn.btn-default {
+    background: #c3d5e6;
+}
+.tab-container ul.nav-tabs .btn.btn-default:hover {
+    background: #d2deeb;
+}
+.tab-container ul.nav-tabs .btn.btn-default:active {
+    background: #9cb5cc;
+}
+.tab-container .tab-pane {
+    padding: 60px 40px;
+    text-align: center;
+}
+.tab-container .tab-pane.active {
+    border-top: 1px solid #ddd;
+}
+
+

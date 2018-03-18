@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html style=" overflow-y: scroll !important;" lang="en" ng-app="app"  class="full-height">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Material Design Bootstrap</title>
+
+    <!-- Meta OG -->
+    <meta property="og:title" content="Software Landing Page Template">
+    <meta property="og:description" content="Fully responsive and well-designed layout of software landing page will enchain your potential customer attention.">
+    <meta property="og:image" content="https://mdbootstrap.com/img/Live/MDB/software-house.jpg">
+    <meta property="og:url" content="https://mdbootstrap.com/live/_MDB/templates/Landing-Page/software-landing-page.html">
+    <meta property="og:site_name" content="mdbootstrap.com">
+    <!-- /Meta OG -->
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="Fully responsive and well-designed layout of software landing page will enchain your potential customer attention." />
+    <meta name="twitter:title" content="Software Landing Page Template" />
+    <meta name="twitter:site" content="@MDBootstrap" />
+    <meta name="twitter:image" content="https://mdbootstrap.com/img/Live/MDB/software-house.jpg" />
+    <meta name="twitter:creator" content="@MDBootstrap" />
+    <!-- /Twitter Card -->
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="app/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="app/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="app/css/mdb.min.css" rel="stylesheet">
+
+    <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css" rel="stylesheet">-->
+
+    <!-- Your custom styles (optional) -->
+    <link href="app/css/style.css" rel="stylesheet">
+
+    <!--Font Files-->
+
+    <!--PubMub CSS Files-->
+
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/chat.css -->
+    <link rel="stylesheet" href="styles/typing-indicator.css">
+    <link rel="stylesheet" href="styles/chat.css">
+    <link rel="stylesheet" href="styles/online-user-list.css">
+    <link rel="stylesheet" href="styles/typing-indicator-box.css">
+
+
+    <link rel="stylesheet" href="styles/ng-notify.theme.css">
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <!--<link rel="stylesheet" href="app/css/tab.css">-->
+
+    <style>
+        @media (max-width: 740px) {
+            .full-height,
+            .full-height body,
+            .full-height header,
+            .full-height header .view {
+                height: 700px;
+            }
+        }
+        body { padding-right: 0 !important;}
+        .modal-open {
+            padding-right: 0px !important;
+        }
+    </style>
+
+
+    <base href="/" />
+   <!-- <script src="https://code.jquery.com/jquery-3.2.1.js"></script>-->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+
+
+
+
+
+</head>
+<body style="padding-right: 0 !important" class="light-blue-skin intro-page software-lp">
+
+<div>
+<ui-view>
+
+</ui-view>
+</div>
+
+<!--<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>-->
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/js/toastr.min.js"></script>
+<link rel="stylesheet" type="text/css" href="bower_components/angular-toastr/dist/angular-toastr.css" />
+<script type="text/javascript" src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+
+
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="app/js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="app/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="app/js/mdb.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.12.1/ui-bootstrap-tpls.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+
+
+
+
+<script>
+    //Animation init
+    new WOW().init();
+    //Modal
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus()
+    })
+
+    // Material Select Initialization
+    $(document).ready(function() {
+        $('.mdb-select').material_select();
+    });
+
+</script>
+
+<!------------------PubNub Integration scripts--------------------------->
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/Materialize/bin/materialize.js"></script>
+<script src="bower_components/pubnub/web/pubnub.min.js"></script>
+<script src="bower_components/pubnub-angular/dist/pubnub-angular.min.js"></script>
+<script src="bower_components/lodash/lodash.js"></script>
+<script src="bower_components/ng-notify/src/scripts/ng-notify.js"></script>
+<script src='bower_components/angular-file-model/angular-file-model.js'></script>
+<!--<script src='bower_components/angular-file-model/angular-file-model.js'></script>-->
+
+<!-- Custom scripts for this template -->
+<script src="app/app.js"></script>
+<script src="app/app.config.js"></script>
+<script src="app/home/homeModule.js"></script>
+<script src="app/home/controller/homeCtrl.js"></script>
+<script src="app/expert/expertModule.js"></script>
+<script src="app/expert/controller/expertCtrl.js"></script>
+<script src="app/layout/layoutModule.js"></script>
+<script src="app/layout/controller/layoutCtrl.js"></script>
+<script src="app/askquestion/qusetionModule.js"></script>
+<script src="app/askquestion/controller/questionCtrl.js"></script>
+<script src="app/profile/profileModule.js"></script>
+<script src="app/profile/controller/profileCtrl.js"></script>
+<script src="app/profile/services/profileService.js"></script>
+<script src="app/groups/groupModule.js"></script>
+<script src="app/groups/controller/groupsCtrl.js"></script>
+<script src="app/layout/message-container/controller/messageContainerCtrl.js"></script>
+<!--<script src="app/custom/customDirectives/pubNubCustomDirective.js"></script>-->
+
+<script src="app/custom/pubNubIntegration/services/current_user.service.js"></script>
+<script src="app/custom/pubNubIntegration/services/message-factory.js"></script>
+<script src="app/custom/pubNubIntegration/services/user.service.js"></script>
+<script src="app/custom/pubNubIntegration/services/typing-indicator.service.js"></script>
+
+<script src="app/custom/pubNubIntegration/shared/user-avatar.directive.js"></script>
+<script src="app/custom/pubNubIntegration/components/message-form/message-form.directive.js"></script>
+<script src="app/custom/pubNubIntegration/components/message-form/type-tracking.directive.js"></script>
+<script src="app/custom/pubNubIntegration/components/message-list/message-list.directive.js"></script>
+<script src="app/custom/pubNubIntegration/components/message-item/message-item.directive.js"></script>
+<script src="app/custom/pubNubIntegration/components/online-user-list/online-user-list.directive.js"></script>
+<script src="app/custom/pubNubIntegration/components/typing-indicator-box/typing-indicator-box.directive.js"></script>
+<script src="app/custom/pubNubIntegration/components/online-user-list/tabHighlight.js"></script>
+
+
+
+
+
+
+
+<!--<script data-main="app/main" src="bower_components/requirejs/require.js"></script>
+<script src="app/appLoader.js"></script>-->
+
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<ng-include src=" 'app/layout/views/navigation.html' "></ng-include>
+
+<div class="row">
+    <div class="col-sm-9 col-md-9">
+
+        <ng-include src=" 'app/layout/message-container/views/messageContainer.html'"></ng-include>
+        <!--Footer-->
+
+    </div>
+    <div class="col-sm-3 col-md-3">
+        <div class="card indigo text-center z-depth-2">
+            <div class="card-body">
+                <p class="white-text mb-0">Select the Language</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <!--Trigger-->
+
+            <button ng-bind="language" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+
+            <!--Menu-->
+            <div  class="dropdown-menu dropdown-primary">
+                <a class="dropdown-item" ng-click="selectedLanguage(x)"  ng-repeat="x in names" href="#">{{x}}</a>
+            </div>
+        </div>
+        <!--/Dropdown primary-->
+
+        <b ng-if="messageStatus=='fail'" style="color:#ff0000;">please select the language</b>
+
+
+        <div class="card indigo text-center z-depth-2">
+            <div class="card-body">
+                <p class="white-text mb-0">Select the Theme</p>
+            </div>
+        </div>
+
+
+
+</div>
+</div>
+<div class="footer">
+    <p>Footer</p>
+</div>

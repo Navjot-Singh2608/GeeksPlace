@@ -1,0 +1,20 @@
+<div class="online-user-list">
+	<div class="online-users-number valign-wrapper">
+		<i class="material-icons">people</i><span class="valign">{{users.length}} online </span>		
+	</div>
+	<ul>
+		<!--<tabset class="tab-container">
+			<tab ng-repeat="tab in tabs" active="tab.active" tab-highlight>
+				<tab-heading>
+					<span>{{tab.title}}</span> <i class="glyphicon glyphicon-remove" ng-click="removeTab($event, $index)"></i>
+				</tab-heading>
+				<h1>{{tab.content}}</h1>
+			</tab>
+		</tabset>-->
+	  <li ng-repeat="user in users track by user.uuid">
+	    <user-avatar uuid="{{user.uuid}}"></user-avatar>
+		  {{user}}
+	  </li>
+	</ul>
+</div>
+

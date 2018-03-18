@@ -1,0 +1,64 @@
+<!--Navbar-->
+<nav id="headerId" ng-controller="layoutCtrl" class="navbar navbar-expand-lg navbar-dark indigo">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="/home">GeekPlace</a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" ng-click="groupPage()" href="#">Groups</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+        </ul>
+        <!-- Links -->
+        <div>
+            <form style="margin-right: 10px;display: inline" class="form-inline">
+                <img src="userProfileImage/{{user.userPicName}}" class="avatar-img" alt="View"/>
+                <span style="color: white;padding-left: 6px">{{fullName}}</span>
+                <!--<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
+            </form>
+            <!--Dropdown primary-->
+            <div style="display: inline" class="dropdown">
+                <a id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                        class="fa fa-caret-down" aria-hidden="true"></i></a>
+                <!--Menu-->
+                <div class="dropdown-menu dropdown-primary">
+                    <a class="dropdown-item" ng-click="myProfileState()">Profile</a>
+                    <a class="dropdown-item" href="#">Setting</a>
+                    <a class="dropdown-item" href="#">Help Center</a>
+                    <a class="dropdown-item" href="#">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</nav>
+<!--/.Navbar-->
