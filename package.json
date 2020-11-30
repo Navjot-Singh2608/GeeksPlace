@@ -63,7 +63,7 @@
     "lodash": "^3.10.0",
     "materialize-css": "^0.97.5",
     "mongodb": "^2.2.19",
-    "mongoose": "4.12.0",
+    "mongoose": "5.7.5",
     "mongoskin": "^2.1.0",
     "multer": "^1.2.1",
     "ng-file-model": "0.0.5",
