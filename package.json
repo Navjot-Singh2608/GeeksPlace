@@ -60,7 +60,7 @@
     "fs-extra": "^2.0.0",
     "jsonfile": "^2.4.0",
     "jsonwebtoken": "^5.0.2",
-    "lodash": "^3.10.0",
+    "lodash": "^4.17.19",
     "materialize-css": "^0.97.5",
     "mongodb": "^2.2.19",
     "mongoose": "4.12.0",
